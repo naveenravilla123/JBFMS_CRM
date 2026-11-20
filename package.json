@@ -1,1 +1,12 @@
-{"name":"jbfms-crm","version":"0.1.0","private":true,"type":"module","description":"Responsive, browser-first JBFMS CRM MVP","scripts":{"dev":"python3 -m http.server 4173","test":"node --test src/data.test.mjs","check":"node --check src/data.js && node --check src/app.js && npm test"}}
+{
+  "name": "jbfms-crm",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "JBFMS CRM prototype with secure inbound intake webhook demo",
+  "scripts": {
+    "dev": "node server/index.js",
+    "test": "node --test src/data.test.mjs server/intake.test.mjs",
+    "check": "node --check src/data.js && node --check src/app.js && node --check server/index.js && node --check server/intake.js && npm test"
+  }
+}
