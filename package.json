@@ -1,0 +1,1 @@
+{"name":"jbfms-crm","version":"0.1.0","private":true,"type":"module","description":"Responsive, browser-first JBFMS CRM MVP","scripts":{"dev":"python3 -m http.server 4173","test":"node --test src/data.test.mjs","check":"node --check src/data.js && node --check src/app.js && npm test"}}
